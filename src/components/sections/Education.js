@@ -12,7 +12,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults,
 };
 
-const FeaturesSplit = ({
+const EducationSplit = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -49,8 +49,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "Efforts of Mine",
-    paragraph: "Projects and Works I have done",
+    title: "Education",
+    paragraph: "A passport to every freedom",
   };
 
   return (
@@ -65,12 +65,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2019
+                  2016-2019 🤗
                 </div>
-                <h3 className="mt-0 mb-12">Student portal</h3>
+                <h3 className="mt-0 mb-12">Graduation</h3>
                 <p className="m-0">
-                  Developed a protal for college for handling placement
-                  Operations
+                  Completed Graduation from Model Engineering College
+                  specialized in computer science
                 </p>
               </div>
               <div
@@ -88,13 +88,13 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2019
+                  2013-2016{" "}
+                  <span role="img" aria-label="sheep">
+                    😌
+                  </span>
                 </div>
-                <h3 className="mt-0 mb-12">Charts for Companies</h3>
-                <p className="m-0">
-                  Worked on a chart project that helps higher management to view
-                  data in a visualized way
-                </p>
+                <h3 className="mt-0 mb-12">Diploma</h3>
+                <p className="m-0">Completed Diploma in Computer Science</p>
               </div>
               <div
                 className={classNames(
@@ -111,32 +111,17 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2020
+                  <span>
+                    1996-2012{" "}
+                    <span role="img" aria-label="sheep">
+                      😮‍💨
+                    </span>
+                  </span>
                 </div>
-                <h3 className="mt-0 mb-12"> Recuirtment Portal</h3>
+                <h3 className="mt-0 mb-12"> HSE</h3>
                 <p className="m-0">
-                  Worked on a recuirtment portal for international clients
+                  Learned a lot that actually had no use in real life
                 </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              ></div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-left"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2022
-                </div>
-                <h3 className="mt-0 mb-12"> Airport Taxi</h3>
-                <p className="m-0">Worked on a website for airport taxi</p>
               </div>
               <div
                 className={classNames(
@@ -153,7 +138,7 @@ const FeaturesSplit = ({
   );
 };
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+EducationSplit.propTypes = propTypes;
+EducationSplit.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default EducationSplit;

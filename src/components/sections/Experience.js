@@ -12,7 +12,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults,
 };
 
-const FeaturesSplit = ({
+const ExperienceSplit = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -49,8 +49,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "Efforts of Mine",
-    paragraph: "Projects and Works I have done",
+    title: "Experience",
+    paragraph: "You don't always have it when you need it",
   };
 
   return (
@@ -65,13 +65,10 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2019
+                  2020-2021
                 </div>
-                <h3 className="mt-0 mb-12">Student portal</h3>
-                <p className="m-0">
-                  Developed a protal for college for handling placement
-                  Operations
-                </p>
+                <h3 className="mt-0 mb-12">Bigbinary</h3>
+                <p className="m-0">Frontend Dev</p>
               </div>
               <div
                 className={classNames(
@@ -88,13 +85,11 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2019
+                  2019-2020
+                  <span role="img" aria-label="sheep"></span>
                 </div>
-                <h3 className="mt-0 mb-12">Charts for Companies</h3>
-                <p className="m-0">
-                  Worked on a chart project that helps higher management to view
-                  data in a visualized way
-                </p>
+                <h3 className="mt-0 mb-12">Impress.ai</h3>
+                <p className="m-0">Frontend Engineer</p>
               </div>
               <div
                 className={classNames(
@@ -111,32 +106,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2020
+                  <span>
+                    2019 <span role="img" aria-label="sheep"></span>
+                  </span>
                 </div>
-                <h3 className="mt-0 mb-12"> Recuirtment Portal</h3>
-                <p className="m-0">
-                  Worked on a recuirtment portal for international clients
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              ></div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-left"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  2022
-                </div>
-                <h3 className="mt-0 mb-12"> Airport Taxi</h3>
-                <p className="m-0">Worked on a website for airport taxi</p>
+                <h3 className="mt-0 mb-12"> Actiotech</h3>
+                <p className="m-0">Frontend Dev</p>
               </div>
               <div
                 className={classNames(
@@ -153,7 +128,7 @@ const FeaturesSplit = ({
   );
 };
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+ExperienceSplit.propTypes = propTypes;
+ExperienceSplit.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default ExperienceSplit;
